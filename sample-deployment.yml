@@ -1,0 +1,14 @@
+---
+- hosts: tag_ProductID_Sample_v1_0_0
+  vars:
+  - warName: hello-world-war-1.0.0.war
+  - warLocalPath: /target
+  - warRemotePath: /opt/tomcat/webapps
+
+  tasks:
+  - name: Download WAR to server
+    synchronize: src={{ warLocalPath }}/{{ warName }} dest={{ warRemotePath }}/{{ warName }}
+
+  handlers:
+    - name: Restart tomcat8
+      service: name=tomcat8 state=restarted
