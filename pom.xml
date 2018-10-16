@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.efsavage</groupId>
-	<artifactId>Sample</artifactId>
+	<artifactId>sample</artifactId>
 	<packaging>war</packaging>
-	<name>Sample Application Repository</name>
+	<name>sample Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
 
 	<build>

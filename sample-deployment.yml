@@ -7,8 +7,8 @@
   tasks:
   - name: Download WAR to server
     copy:
-     src: /var/jenkins_home/workspace/sample/target/Sample.war
-     dest: /opt/tomcat/webapps/ROOT/Sample.war
+     src: /var/jenkins_home/workspace/sample/target/sample.war
+     dest: /opt/tomcat/webapps/ROOT/sample.war
      owner: tomcat
      group: tomcat
      mode: 0644
