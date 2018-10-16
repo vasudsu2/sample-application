@@ -10,7 +10,12 @@
 
   tasks:
   - name: Download WAR to server
-    synchronize: src={{ warLocalPath }}/{{ warName }} dest={{ warRemotePath }}/{{ warName }}
+    copy:
+     src: {{ warLocalPath }}/{{ warName }}
+     dest: {{ warRemotePath }}/{{ warName }}
+     owner: tomcat
+     group: tomcat
+     mode: 0644
 
   handlers:
     - name: Restart tomcat8
