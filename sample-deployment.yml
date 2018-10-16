@@ -1,8 +1,11 @@
 ---
 - hosts: tag_ProductID_Sample_v1_0_0
+  gather_facts: no
+  remote_user: ec2-user
+  become: yes
   vars:
   - warName: hello-world-war-1.0.0.war
-  - warLocalPath: /target
+  - warLocalPath: /var/jenkins_home/workspace/sample/target
   - warRemotePath: /opt/tomcat/webapps
 
   tasks:
