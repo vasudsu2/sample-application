@@ -7,8 +7,8 @@
   tasks:
   - name: Download WAR to server
     copy:
-     src: /var/jenkins_home/workspace/sample/target/hello-world-war-1.0.0.war
-     dest: /opt/tomcat/webapps/ROOT/hello-world-war-1.0.0.war
+     src: /var/jenkins_home/workspace/sample/target/Sample.war
+     dest: /opt/tomcat/webapps/ROOT/Sample.war
      owner: tomcat
      group: tomcat
      mode: 0644
