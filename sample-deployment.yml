@@ -12,7 +12,6 @@
      owner: tomcat
      group: tomcat
      mode: 0644
-
-  tasks:
-  - name: Restart tomcat8
-    service: name=tomcat8 state=restarted
+     
+  - name: Restart tomcat
+    service: name=tomcat state=restarted
