@@ -13,6 +13,6 @@
      group: tomcat
      mode: 0644
 
-  handlers:
-    - name: Restart tomcat8
-      service: name=tomcat8 state=restarted
+  tasks:
+  - name: Restart tomcat8
+    service: name=tomcat8 state=restarted
